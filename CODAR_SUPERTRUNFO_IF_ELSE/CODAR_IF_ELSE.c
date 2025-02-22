@@ -100,18 +100,21 @@ int main() {
     printf("\nPIB per capita1: %.2f\n");
 
     printf("\nCARTA: 2.\n");
-    printf("\nDensidade populaciona2: %.2f\n");
+    printf("\n %s", estado2, "%.2f\n");
     printf("\nPIB per capita2: %.2f\n");
 
-    if ( densidade1 > densidade2 ) {
+    if ( populacao1, area1, pib1, numero1 > populacao2, area2, pib2, numero2  ) {
         printf("\nCARTA 1 VENCEDORA! :) \n");
     } else {
         printf("\nCARTA 2 PERDEDORA!:( \n");
     }
-    if ( densidade2 > densidade1 ) {
+    if ( populacao2, area2, pib2, numero2 > populacao1, area1, pib1, numero1 ) {
         printf("\nCARTA 2 VENCEDORA! :)");
     } else {
         printf("\nCARTA 1 PERDEDORA! :(");
+    } 
+    if ( densidade1 == densidade2, pib_percapita1 == pib_percapita2 ){
+        printf("\nIMPATE!");
     }
 
 
