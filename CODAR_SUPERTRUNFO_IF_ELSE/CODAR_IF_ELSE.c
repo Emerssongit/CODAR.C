@@ -16,7 +16,9 @@ int main() {
 
     // Leitura e caputra de dados das cartas.
 
-    printf("Codigo: 1\n");
+    printf(" \n**********CARTA SUPERTRUNFO**********\n ");
+
+    printf("\nCARTA: 1.\n");
     printf("De 'A' a 'H' digite a letra de um estado: ");
     scanf(" %s", &estado1); 
 
@@ -45,7 +47,7 @@ int main() {
 
      // Leitura de dados cadastrados pelo usuarios.
 
-    printf("\nCodigo: 1\n");
+    printf("\nCARTA: 1. \n");
     printf("Estado: %s \n", estado1);
     printf("Codigo da carta: %s\n", codigo1);
     printf("Nome da cidade: %s\n", cidade1);
@@ -53,15 +55,10 @@ int main() {
     printf("Área km²: %f\n", area1);
     printf("PIB: %f\n", pib1);
     printf("Número de Pontos Turísticos: %i\n", numero1);
-    printf("\n Densidade populacional: %.2f\n");
-    printf("\nPIB per capita1: %.2f\n");
-
 
     // Leitura e caputra de dados das cartas.
 
-    printf("\n**********CARTA SUPERTRUNFO**********\n");
-
-    printf("\nCarta: 2\n");
+    printf("\nCARTA: 2. \n");
     printf("De 'A' a 'H' digite a letra de um estado: ");
     scanf(" %s", estado2);
 
@@ -72,7 +69,7 @@ int main() {
     scanf(" %s", cidade2);
 
     printf("População: ");
-    scanf(" %f", &populacao2);
+    scanf(" %d", &populacao2);
 
     printf("Área km²: ");
     scanf(" %f", &area2);
@@ -93,16 +90,30 @@ int main() {
     printf("Estado: %s\n", estado2);
     printf("Codigo da carta: %s\n", codigo2);
     printf("Nome da cidade: %s\n", cidade2);
-    printf("População: %f\n", populacao2);
+    printf("População: %d\n", populacao2);
     printf("Área: %f\n", area2);
     printf("PIB: %f\n", pib2);
     printf("Número de Pontos Turísticos: %d\n", numero2);
     
-
+    printf("\nCARTA: 1. \n");
     printf("\n Densidade populacional: %.2f\n");
-    printf("\nPIB per capita1: %.2f\n")
+    printf("\nPIB per capita1: %.2f\n");
 
-    printf("\n Densidade populacional: %.2f\n");
-    printf("\n Densidade populaciona2: %.2f\n");
+    printf("\nCARTA: 2.\n");
+    printf("\nDensidade populaciona2: %.2f\n");
+    printf("\nPIB per capita2: %.2f\n");
+
+    if ( densidade1 > densidade2 ) {
+        printf("\nCARTA 1 VENCEDORA! :) \n");
+    } else {
+        printf("\nCARTA 2 PERDEDORA!:( \n");
+    }
+    if ( densidade2 > densidade1 ) {
+        printf("\nCARTA 2 VENCEDORA! :)");
+    } else {
+        printf("\nCARTA 1 PERDEDORA! :(");
+    }
+
+
     return 0;
 }
