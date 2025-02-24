@@ -54,8 +54,8 @@ int main() {
     printf("Área km²: %f\n", area1);
     printf("PIB: %f\n", pib1);
     printf("Número de Pontos Turísticos: %i\n", numero1);
-    printf("Densidade populacional: %.2f", densidade1);
-    printf("PIB per capita: %.2f", pib_percapita1);
+    printf("Densidade populacional: %.2f\n", densidade1);
+    printf("PIB per capita: %.8f\n", pib_percapita1);
 
     // Leitura e caputra de dados das cartas.
 
@@ -94,8 +94,8 @@ int main() {
     printf("Área: %f\n", area2);
     printf("PIB: %f\n", pib2);
     printf("Número de Pontos Turísticos: %d\n", numero2);
-    printf("Densidade populacional: %.2f", densidade2);
-    printf("PIB per capita: %.2f", pib_percapita2);
+    printf("Densidade populacional: %.2f\n", densidade2);
+    printf("PIB per capita: %.8f\n", pib_percapita2);
 
     // Comparação das cartas.
 
