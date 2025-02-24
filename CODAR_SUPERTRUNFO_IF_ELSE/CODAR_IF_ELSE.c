@@ -15,9 +15,9 @@ int main() {
     float pib_percapita1, pib_percapita2; // calculo do pib e populaçãp.
 
     // Leitura e caputra de dados das cartas.
-
-    printf(" \n**********CARTA SUPERTRUNFO**********\n ");
-
+   
+    printf(" \n**********CARTA SUPER TRUNFO**********\n ");
+   
     printf("\nCARTA: 1.\n");
     printf("De 'A' a 'H' digite a letra de um estado: ");
     scanf(" %s", &estado1); 
@@ -97,11 +97,21 @@ int main() {
     printf("Densidade populacional: %.2f\n", densidade2);
     printf("PIB per capita: %.8f\n", pib_percapita2);
 
-    // Comparação das cartas.
+    // Comparação das cartas pelo atributo da ÁREA.
 
     printf("\nCOMPARAÇÃO DE CARTAS (ÁREA)\n"),
     printf("Carta: 1 %s ( %s ): %f\n", cidade1, estado1, area1);
     printf("Carta: 2 %s ( %s ): %f\n", cidade2, estado2, area2);
+
+    // Função if e else para determinar a carta vencedora e a perdedora ou ambas empatam.
+
+    if (populacao1 > populacao2 && area1 > area2 && pib1 > pib2 && numero1 > numero2) {
+        printf("\nCARTA 1 VENCEDORA! :)\n");
+    } else if (populacao2 > populacao1 && area2 > area1 && pib2 > pib1 && numero2 > numero1) {
+        printf("\nCARTA 2 VENCEDORA! :)\n");
+    } else {
+        printf("\nEMPATE!\n");
+    }
 
 
     return 0;
