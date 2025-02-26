@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 // Nome das variaveis.
 
@@ -7,7 +9,7 @@ int main() {
     char estado1[90], estado2[90]; // Variavel com nome estado.
     char codigo1[4], codigo2[5];  // Variavel com codigo carta.
     char cidade1[90], cidade2[90]; // Variavel com nome da cidade.
-    int populacao1, populacao2; // Variavel com número da população.
+    int populacao1, populacao2, funcao; // Variavel com número da população.
     float area1, area2; // variavel, área da cidade.
     float pib1, pib2;  // variavel, PIB da cidade.
     int numero1, numero2; // Variavel com número de pontos turisticos.
@@ -15,8 +17,16 @@ int main() {
     float pib_percapita1, pib_percapita2; // calculo do pib e populaçãp.
 
     // Leitura e caputra de dados das cartas.
+    printf("########## JOGO SUPER TRUNFO ##########\n");
+
+    printf("\nMenu PRINCIPAL.\n");
+    printf("1.Iniciar o jogo.\n");
+    printf("2.Regras do jogo.\n");
+    printf("3.Sair do jogo.\n");
+    printf("Escolha uma função:");
+    scanf("%d", &funcao);
    
-    printf(" \n**********CARTA SUPER TRUNFO**********\n ");
+    printf(" \n********** CADASTRO DAS CARTAS **********\n ");
    
     printf("\nCARTA: 1.\n");
     printf("De 'A' a 'H' digite a letra de um estado: ");
