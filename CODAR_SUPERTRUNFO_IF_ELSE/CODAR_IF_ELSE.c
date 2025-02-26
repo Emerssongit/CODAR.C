@@ -20,7 +20,7 @@ int main() {
    
     printf("\nCARTA: 1.\n");
     printf("De 'A' a 'H' digite a letra de um estado: ");
-    scanf(" %s", &estado1); 
+    scanf(" %s", estado1); 
 
     printf("Codigo da carta: ");
     scanf(" %s", codigo1);
